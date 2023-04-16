@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Remaining Stock</title>
+        <style>
+            .head{
+                height:10%;
+                width:100%;
+                background-color: black;
+                background-image: url('bgp.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                text-align: center;
+                top:0;
+                left:0;
+            }
+            .body{
+                height:90%;
+                width:100%;
+                background-image: url('bgde.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                text-align: center;
+                top:5pt;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #8b8383;
+                }
+
+            li {
+                float: left;
+                }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                }
+
+            li a:hover {
+                background-color: #111;
+                }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="head">
+                <p style="font-size: 40pt; align-items: center; text-transform: uppercase; text-decoration:dotted; color: aliceblue;">
+                Vendorz</p>
+                </div>
+                </header>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="proddes.html">Product Description</a></li>
+                <li><a href="suggestion.html">Suggestions</a></li>
+              </ul>
+       
+        <div class="body">
+            <h3>Stock Details</h3>
+        <form>
+            <label for="Date"> Date <input type="date" name="date" value="date"></label>
+            <br>
+            <br>
+            <label for="Day">Day</label>
+            <select id="Day" name="Day">
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+            </select>
+            <br>
+            <br>
+            <label for="Product">Product Name:</label>
+            <select id="Product" name="Product">
+                <option value="Juice">Juice</option>
+                <option value="Chips">Chips</option>
+                <option value="Chocolates">Chocolates</option>
+                <option value="Healthy Snacks">Healthy Snacks</option>
+                <option value="Buiscuits">Buiscuits</option>
+            </select>
+            <br>
+            <br>
+            <label for="Total">Total Number of products left:</label>
+            <input type="number" name="Total" value="Total">
+             <br>
+             <br>
+             <button type="submit">submit</button> 
+        </form>
+        </div>
+    </body>
+</html>
